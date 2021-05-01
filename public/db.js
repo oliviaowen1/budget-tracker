@@ -32,3 +32,36 @@ function saveRecord(record) {
     // this adds the record to your store
     store.add(record);
 }
+
+function checkDatabase() {
+    // this opens a transaction for your pending database
+    const transaction = db.transaction(["pending"], "readwrite");
+    // this accesses the items in your pending object store
+    const store = transaction.objectStore("pending");
+    // this gets all records from the store and sets to the variable
+    const getAll = store.getAll();
+  
+    getAll.onsuccess = function () {
+      if (getAll.result.length > 0) {
+        fetch("/api/transaction/bulk", {
+          method: "POST",
+          body: JSON.stringify(getAll.result),
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+          }
+        })
+          .then(response => response.json())
+          .then(() => {
+            // if this is successful it will open a transaction for your pending db
+            const transaction = db.transaction(["pending"], "readwrite");
+  
+            // this will access your pending object store
+            const store = transaction.objectStore("pending");
+  
+            // below clears all items in your store
+            store.clear();
+          });
+      }
+    };
+  }

@@ -50,7 +50,7 @@ Here you can see that this transaction is about to be added to the tracker:
 
 This is what the graph looks like after a transaction has been put through:
 
-![after transaction](https://raw.githubusercontent.com/oliviaowen1/tech-blog/main/assets/third.png)
+![after transaction](https://raw.githubusercontent.com/oliviaowen1/budget-tracker/main/assets/third.png)
 
 
 

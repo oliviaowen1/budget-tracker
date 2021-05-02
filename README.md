@@ -23,14 +23,13 @@ You can use the deployed application [here](https://budget-tracker-olivia-owen.h
 
 In order to use this application you will need to open the deployed application on Heroku.
 
-From here you will either be able to log in, or sign up if you dont already have an account.
+From here you will be presented with a blank graph, you will be able to start logging the money you have gained and spent using the form above.
 
-You will then be able to write a blog post after you sign up, or if you log in you will be taken to your dashboard, where you can either write a new post of see the posts you have already made.
-You can also click edit where you will be able to edit your post, or delete which will remove your post.
+You will then be able to see your transaction spending displayed on the graph. 
 
-If you go to the homepage you can see everybody's posts, this includes your own as well as other users.
+You are still able to enter transactions when you are offlien and these will fully populate as soon as you come back online.
 
-You can click into these and add comments. You will also be able to view everybody elses comments.
+
 
 
 
@@ -40,25 +39,18 @@ You can click into these and add comments. You will also be able to view everybo
 
 The screenshots below show the following:
 
-The log in page:
-![login](https://raw.githubusercontent.com/oliviaowen1/tech-blog/main/assets/login.png)
+This graph has transactions that have already taken place:
+![graph](https://raw.githubusercontent.com/oliviaowen1/budget-tracker/main/assets/first.png)
 
 
-Here on your dashboard you can also see your previous posts or write a new one:
+Here you can see that this transaction is about to be added to the tracker:
 
-![get tags by id](https://raw.githubusercontent.com/oliviaowen1/tech-blog/main/assets/dashboard.png)
-
-
-Here you can see the homepage where you can view everybodies posts:
-
-![create tag](https://raw.githubusercontent.com/oliviaowen1/tech-blog/main/assets/home.png)
+![transaction](https://raw.githubusercontent.com/oliviaowen1/budget-tracker/main/assets/second.png)
 
 
-Here is where you can add a comment:
+This is what the graph looks like after a transaction has been put through:
 
-![updated all 1](https://raw.githubusercontent.com/oliviaowen1/tech-blog/main/assets/comment.png)
-
-
+![after transaction](https://raw.githubusercontent.com/oliviaowen1/tech-blog/main/assets/third.png)
 
 
 
